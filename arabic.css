@@ -1,0 +1,204 @@
+nav{
+    background-color: #997962;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.language,
+.arabic{
+    font-weight: bold;
+    position: absolute;
+    color: azure;
+    font-weight: bold;
+    top: 20%;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.arabic{
+    border-bottom: solid 4px #41545b;
+}
+
+.language{
+    left: 40%;
+}
+
+.arabic{
+    right: 40%;
+}
+
+.head{
+    background-color: #bf977b;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    direction: rtl;
+}
+
+.head .background{
+    direction: rtl;
+    background-image: url("photos/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 3%;
+    right: 0;
+    left: 5%;
+    bottom: 0;
+    width: 100%;
+    height: 95%;
+}
+
+.background h1{
+    direction: rtl;
+    position: sticky;
+    font-size: 89px;
+    top: 25%;
+    right: 12%;
+    bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.head span{
+    direction: rtl;
+    position: sticky;
+    font-size: 40px;
+    top: 64%;
+    right: 22%;
+    font-family: sans-serif;
+    color: #bae2df;
+}
+
+.content{
+    direction: rtl;
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    top: 100%;
+    text-align: center;
+    color: #41545b;
+    font-size: 40px;
+}
+
+.content .scientific,
+.content .literary{
+    direction: rtl;
+    background-color: #D9D9D9;
+    margin: 5%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content .scientific a,
+.content .literary a{
+    direction: rtl;
+    color: black;
+    background-color: #bf977b;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    float: left;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    width: calc(70% / 3);
+    font-size: 32px;
+}
+
+.content a:hover{
+    direction: rtl;
+    color: #D9D9D9;
+}
+
+.clear{
+    clear: both;
+}
+
+@media(max-width: 700px){
+    .head{
+        direction: rtl;
+        background-color: #bf977b;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        width: 100%;
+        height: 95%;
+        text-align: center;
+    }
+    .head .background{
+        direction: rtl;
+        background-image: url("photos/background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 3%;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 95%;
+    }
+    .background h1{
+        direction: rtl;
+        position: sticky;
+        font-size: 40px;
+        top: 38%;
+        right: 5%;
+        bottom: 20%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .head span{
+        direction: rtl;
+        position: sticky;
+        font-size: 30px;
+        top: 57%;
+        right: 27%;
+        font-family: sans-serif;
+        color: #bae2df;
+    }
+    .content .scientific a,
+    .content .literary a{
+        color: black;
+        background-color: #bf977b;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        float: left;
+        text-decoration: none;
+        margin-left: 5%;
+        margin-bottom: 3%;
+        width: calc(111% / 3);
+        font-size: 24px;
+    }
+    .biology:visited,
+    .math:visited,
+    .physics:visited,
+    .pure:visited,
+    .chemistery:visited,
+    .arabic.s:visited,
+    .philosophy:visited,
+    .geography:visited,
+    .history:visited,
+    .mental:visited,
+    .french:visited,
+    .italian:visited,
+    .german:visited{
+        direction: rtl;
+        color: #D9D9D9;
+    }
+    .content p{
+        direction: rtl;
+        font-weight: bold;
+    }
+}
